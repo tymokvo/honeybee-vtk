@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>honeybee_vtk.legend_parameter module &#8212; honeybee vtk  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="honeybee_vtk.model module" href="honeybee_vtk.model.html" />
+    <link rel="prev" title="honeybee_vtk.config module" href="honeybee_vtk.config.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          honeybee vtk</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="honeybee_vtk.html">honeybee_vtk package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.cli.html">honeybee_vtk.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.cli.export.html">honeybee_vtk.cli.export module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.cli.translate.html">honeybee_vtk.cli.translate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.cli.html#module-honeybee_vtk.cli">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.vtkjs.html">honeybee_vtk.vtkjs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.vtkjs.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.vtkjs.helper.html">honeybee_vtk.vtkjs.helper module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.vtkjs.schema.html">honeybee_vtk.vtkjs.schema module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.vtkjs.html#module-honeybee_vtk.vtkjs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="honeybee_vtk.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.actor.html">honeybee_vtk.actor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.assistant.html">honeybee_vtk.assistant module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.camera.html">honeybee_vtk.camera module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.config.html">honeybee_vtk.config module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">honeybee_vtk.legend_parameter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.model.html">honeybee_vtk.model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.scene.html">honeybee_vtk.scene module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.to_vtk.html">honeybee_vtk.to_vtk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.types.html">honeybee_vtk.types module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#module-honeybee_vtk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="honeybee_vtk.html">honeybee_vtk package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="honeybee_vtk.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.actor.html">honeybee_vtk.actor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.assistant.html">honeybee_vtk.assistant module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.camera.html">honeybee_vtk.camera module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.config.html">honeybee_vtk.config module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">honeybee_vtk.legend_parameter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.model.html">honeybee_vtk.model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.scene.html">honeybee_vtk.scene module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.to_vtk.html">honeybee_vtk.to_vtk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.types.html">honeybee_vtk.types module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#module-honeybee_vtk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="honeybee_vtk.config.html" title="Previous Chapter: honeybee_vtk.config module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; honeybee_vtk....</span>
+    </a>
+  </li>
+  <li>
+    <a href="honeybee_vtk.model.html" title="Next Chapter: honeybee_vtk.model module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">honeybee_vtk.... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/honeybee_vtk.legend_parameter.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="honeybee_vtk.html">honeybee_vtk package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="honeybee_vtk.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.actor.html">honeybee_vtk.actor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.assistant.html">honeybee_vtk.assistant module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.camera.html">honeybee_vtk.camera module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.config.html">honeybee_vtk.config module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">honeybee_vtk.legend_parameter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.model.html">honeybee_vtk.model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.scene.html">honeybee_vtk.scene module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.to_vtk.html">honeybee_vtk.to_vtk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.types.html">honeybee_vtk.types module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#module-honeybee_vtk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-honeybee_vtk.legend_parameter">
+<span id="honeybee-vtk-legend-parameter-module"></span><h1>honeybee_vtk.legend_parameter module<a class="headerlink" href="#module-honeybee_vtk.legend_parameter" title="Permalink to this headline">¶</a></h1>
+<p>Vtk legend parameters.</p>
+<dl class="py class">
+<dt id="honeybee_vtk.legend_parameter.Colors">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">honeybee_vtk.legend_parameter.</span></code><code class="sig-name descname"><span class="pre">Colors</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#Colors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>Colors for a legend.</p>
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.annual_comfort">
+<code class="sig-name descname"><span class="pre">annual_comfort</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:110,</span> <span class="pre">G:0,</span> <span class="pre">B:153,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:102,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.annual_comfort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.benefit">
+<code class="sig-name descname"><span class="pre">benefit</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:238,</span> <span class="pre">B:184,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:191,</span> <span class="pre">B:48,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.benefit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.benefit_harm">
+<code class="sig-name descname"><span class="pre">benefit_harm</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:191,</span> <span class="pre">B:48,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:238,</span> <span class="pre">B:184,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.benefit_harm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.black_to_white">
+<code class="sig-name descname"><span class="pre">black_to_white</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.black_to_white" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.blue_green_red">
+<code class="sig-name descname"><span class="pre">blue_green_red</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:0,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:255,</span> <span class="pre">B:100,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.blue_green_red" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.cloud_cover">
+<code class="sig-name descname"><span class="pre">cloud_cover</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:251,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:217,</span> <span class="pre">G:217,</span> <span class="pre">B:217,</span> <span class="pre">A:255),</span> <span class="pre">(R:83,</span> <span class="pre">G:114,</span> <span class="pre">B:115,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.cloud_cover" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.cold_sensation">
+<code class="sig-name descname"><span class="pre">cold_sensation</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:200,</span> <span class="pre">G:225,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:136,</span> <span class="pre">B:255,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.cold_sensation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.ecotect">
+<code class="sig-name descname"><span class="pre">ecotect</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:0,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:53,</span> <span class="pre">G:0,</span> <span class="pre">B:202,</span> <span class="pre">A:255),</span> <span class="pre">(R:107,</span> <span class="pre">G:0,</span> <span class="pre">B:148,</span> <span class="pre">A:255),</span> <span class="pre">(R:160,</span> <span class="pre">G:0,</span> <span class="pre">B:95,</span> <span class="pre">A:255),</span> <span class="pre">(R:214,</span> <span class="pre">G:0,</span> <span class="pre">B:41,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:12,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:66,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:119,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:173,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:226,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.ecotect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.energy_balance">
+<code class="sig-name descname"><span class="pre">energy_balance</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:138,</span> <span class="pre">G:17,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:239,</span> <span class="pre">G:39,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:121,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:254,</span> <span class="pre">G:244,</span> <span class="pre">B:1,</span> <span class="pre">A:255),</span> <span class="pre">(R:166,</span> <span class="pre">G:249,</span> <span class="pre">B:86,</span> <span class="pre">A:255),</span> <span class="pre">(R:97,</span> <span class="pre">G:246,</span> <span class="pre">B:156,</span> <span class="pre">A:255),</span> <span class="pre">(R:1,</span> <span class="pre">G:232,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:7,</span> <span class="pre">G:88,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:7,</span> <span class="pre">G:48,</span> <span class="pre">B:224,</span> <span class="pre">A:255),</span> <span class="pre">(R:4,</span> <span class="pre">G:25,</span> <span class="pre">B:145,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.energy_balance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.energy_balance_storage">
+<code class="sig-name descname"><span class="pre">energy_balance_storage</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:138,</span> <span class="pre">G:17,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:239,</span> <span class="pre">G:39,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:121,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:254,</span> <span class="pre">G:244,</span> <span class="pre">B:1,</span> <span class="pre">A:255),</span> <span class="pre">(R:166,</span> <span class="pre">G:249,</span> <span class="pre">B:86,</span> <span class="pre">A:255),</span> <span class="pre">(R:97,</span> <span class="pre">G:246,</span> <span class="pre">B:156,</span> <span class="pre">A:255),</span> <span class="pre">(R:1,</span> <span class="pre">G:232,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:7,</span> <span class="pre">G:88,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:7,</span> <span class="pre">G:48,</span> <span class="pre">B:224,</span> <span class="pre">A:255),</span> <span class="pre">(R:4,</span> <span class="pre">G:25,</span> <span class="pre">B:145,</span> <span class="pre">A:255),</span> <span class="pre">(R:128,</span> <span class="pre">G:102,</span> <span class="pre">B:64,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.energy_balance_storage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.glare_study">
+<code class="sig-name descname"><span class="pre">glare_study</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:156,</span> <span class="pre">G:217,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:243,</span> <span class="pre">B:77,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:115,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.glare_study" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.harm">
+<code class="sig-name descname"><span class="pre">harm</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:238,</span> <span class="pre">B:184,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.harm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.heat_sensation">
+<code class="sig-name descname"><span class="pre">heat_sensation</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:230,</span> <span class="pre">B:230,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.heat_sensation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.multi_colored">
+<code class="sig-name descname"><span class="pre">multi_colored</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:4,</span> <span class="pre">G:25,</span> <span class="pre">B:145,</span> <span class="pre">A:255),</span> <span class="pre">(R:7,</span> <span class="pre">G:48,</span> <span class="pre">B:224,</span> <span class="pre">A:255),</span> <span class="pre">(R:7,</span> <span class="pre">G:88,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:1,</span> <span class="pre">G:232,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:97,</span> <span class="pre">G:246,</span> <span class="pre">B:156,</span> <span class="pre">A:255),</span> <span class="pre">(R:166,</span> <span class="pre">G:249,</span> <span class="pre">B:86,</span> <span class="pre">A:255),</span> <span class="pre">(R:254,</span> <span class="pre">G:244,</span> <span class="pre">B:1,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:121,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:239,</span> <span class="pre">G:39,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:138,</span> <span class="pre">G:17,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.multi_colored" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.multicolored_2">
+<code class="sig-name descname"><span class="pre">multicolored_2</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:16,</span> <span class="pre">B:120,</span> <span class="pre">A:255),</span> <span class="pre">(R:38,</span> <span class="pre">G:70,</span> <span class="pre">B:160,</span> <span class="pre">A:255),</span> <span class="pre">(R:5,</span> <span class="pre">G:180,</span> <span class="pre">B:222,</span> <span class="pre">A:255),</span> <span class="pre">(R:16,</span> <span class="pre">G:180,</span> <span class="pre">B:109,</span> <span class="pre">A:255),</span> <span class="pre">(R:59,</span> <span class="pre">G:183,</span> <span class="pre">B:35,</span> <span class="pre">A:255),</span> <span class="pre">(R:143,</span> <span class="pre">G:209,</span> <span class="pre">B:19,</span> <span class="pre">A:255),</span> <span class="pre">(R:228,</span> <span class="pre">G:215,</span> <span class="pre">B:29,</span> <span class="pre">A:255),</span> <span class="pre">(R:246,</span> <span class="pre">G:147,</span> <span class="pre">B:17,</span> <span class="pre">A:255),</span> <span class="pre">(R:243,</span> <span class="pre">G:74,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.multicolored_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.multicolored_3">
+<code class="sig-name descname"><span class="pre">multicolored_3</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:69,</span> <span class="pre">G:92,</span> <span class="pre">B:166,</span> <span class="pre">A:255),</span> <span class="pre">(R:66,</span> <span class="pre">G:128,</span> <span class="pre">B:167,</span> <span class="pre">A:255),</span> <span class="pre">(R:62,</span> <span class="pre">G:176,</span> <span class="pre">B:168,</span> <span class="pre">A:255),</span> <span class="pre">(R:78,</span> <span class="pre">G:181,</span> <span class="pre">B:137,</span> <span class="pre">A:255),</span> <span class="pre">(R:120,</span> <span class="pre">G:188,</span> <span class="pre">B:59,</span> <span class="pre">A:255),</span> <span class="pre">(R:139,</span> <span class="pre">G:184,</span> <span class="pre">B:46,</span> <span class="pre">A:255),</span> <span class="pre">(R:197,</span> <span class="pre">G:157,</span> <span class="pre">B:54,</span> <span class="pre">A:255),</span> <span class="pre">(R:220,</span> <span class="pre">G:144,</span> <span class="pre">B:57,</span> <span class="pre">A:255),</span> <span class="pre">(R:228,</span> <span class="pre">G:100,</span> <span class="pre">B:59,</span> <span class="pre">A:255),</span> <span class="pre">(R:233,</span> <span class="pre">G:68,</span> <span class="pre">B:60,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.multicolored_3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.nuanced">
+<code class="sig-name descname"><span class="pre">nuanced</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:49,</span> <span class="pre">G:54,</span> <span class="pre">B:149,</span> <span class="pre">A:255),</span> <span class="pre">(R:69,</span> <span class="pre">G:117,</span> <span class="pre">B:180,</span> <span class="pre">A:255),</span> <span class="pre">(R:116,</span> <span class="pre">G:173,</span> <span class="pre">B:209,</span> <span class="pre">A:255),</span> <span class="pre">(R:171,</span> <span class="pre">G:217,</span> <span class="pre">B:233,</span> <span class="pre">A:255),</span> <span class="pre">(R:224,</span> <span class="pre">G:243,</span> <span class="pre">B:248,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:191,</span> <span class="pre">A:255),</span> <span class="pre">(R:254,</span> <span class="pre">G:224,</span> <span class="pre">B:144,</span> <span class="pre">A:255),</span> <span class="pre">(R:253,</span> <span class="pre">G:174,</span> <span class="pre">B:97,</span> <span class="pre">A:255),</span> <span class="pre">(R:244,</span> <span class="pre">G:109,</span> <span class="pre">B:67,</span> <span class="pre">A:255),</span> <span class="pre">(R:215,</span> <span class="pre">G:48,</span> <span class="pre">B:39,</span> <span class="pre">A:255),</span> <span class="pre">(R:165,</span> <span class="pre">G:0,</span> <span class="pre">B:38,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.nuanced" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.openstudio_palette">
+<code class="sig-name descname"><span class="pre">openstudio_palette</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:230,</span> <span class="pre">G:180,</span> <span class="pre">B:60,</span> <span class="pre">A:255),</span> <span class="pre">(R:230,</span> <span class="pre">G:215,</span> <span class="pre">B:150,</span> <span class="pre">A:255),</span> <span class="pre">(R:165,</span> <span class="pre">G:82,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:128,</span> <span class="pre">G:20,</span> <span class="pre">B:20,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:128,</span> <span class="pre">B:128,</span> <span class="pre">A:255),</span> <span class="pre">(R:64,</span> <span class="pre">G:128,</span> <span class="pre">B:128,</span> <span class="pre">A:255),</span> <span class="pre">(R:128,</span> <span class="pre">G:128,</span> <span class="pre">B:128,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:128,</span> <span class="pre">B:128,</span> <span class="pre">A:255),</span> <span class="pre">(R:128,</span> <span class="pre">G:64,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:64,</span> <span class="pre">G:180,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:160,</span> <span class="pre">G:150,</span> <span class="pre">B:100,</span> <span class="pre">A:255),</span> <span class="pre">(R:120,</span> <span class="pre">G:75,</span> <span class="pre">B:190,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:200,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:128,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.openstudio_palette" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.original">
+<code class="sig-name descname"><span class="pre">original</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:75,</span> <span class="pre">G:107,</span> <span class="pre">B:169,</span> <span class="pre">A:255),</span> <span class="pre">(R:115,</span> <span class="pre">G:147,</span> <span class="pre">B:202,</span> <span class="pre">A:255),</span> <span class="pre">(R:170,</span> <span class="pre">G:200,</span> <span class="pre">B:247,</span> <span class="pre">A:255),</span> <span class="pre">(R:193,</span> <span class="pre">G:213,</span> <span class="pre">B:208,</span> <span class="pre">A:255),</span> <span class="pre">(R:245,</span> <span class="pre">G:239,</span> <span class="pre">B:103,</span> <span class="pre">A:255),</span> <span class="pre">(R:252,</span> <span class="pre">G:230,</span> <span class="pre">B:74,</span> <span class="pre">A:255),</span> <span class="pre">(R:239,</span> <span class="pre">G:156,</span> <span class="pre">B:21,</span> <span class="pre">A:255),</span> <span class="pre">(R:234,</span> <span class="pre">G:123,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:234,</span> <span class="pre">G:74,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:234,</span> <span class="pre">G:38,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.original" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.peak_load_balance">
+<code class="sig-name descname"><span class="pre">peak_load_balance</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:251,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:148,</span> <span class="pre">G:24,</span> <span class="pre">B:24,</span> <span class="pre">A:255),</span> <span class="pre">(R:135,</span> <span class="pre">G:178,</span> <span class="pre">B:224,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:175,</span> <span class="pre">B:46,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:242,</span> <span class="pre">B:140,</span> <span class="pre">A:255),</span> <span class="pre">(R:204,</span> <span class="pre">G:204,</span> <span class="pre">B:204,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.peak_load_balance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.shade_benefit">
+<code class="sig-name descname"><span class="pre">shade_benefit</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:209,</span> <span class="pre">G:229,</span> <span class="pre">B:240,</span> <span class="pre">A:255),</span> <span class="pre">(R:146,</span> <span class="pre">G:197,</span> <span class="pre">B:222,</span> <span class="pre">A:255),</span> <span class="pre">(R:67,</span> <span class="pre">G:147,</span> <span class="pre">B:195,</span> <span class="pre">A:255),</span> <span class="pre">(R:33,</span> <span class="pre">G:102,</span> <span class="pre">B:172,</span> <span class="pre">A:255),</span> <span class="pre">(R:5,</span> <span class="pre">G:48,</span> <span class="pre">B:97,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.shade_benefit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.shade_benefit_harm">
+<code class="sig-name descname"><span class="pre">shade_benefit_harm</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:5,</span> <span class="pre">G:48,</span> <span class="pre">B:97,</span> <span class="pre">A:255),</span> <span class="pre">(R:33,</span> <span class="pre">G:102,</span> <span class="pre">B:172,</span> <span class="pre">A:255),</span> <span class="pre">(R:67,</span> <span class="pre">G:147,</span> <span class="pre">B:195,</span> <span class="pre">A:255),</span> <span class="pre">(R:146,</span> <span class="pre">G:197,</span> <span class="pre">B:222,</span> <span class="pre">A:255),</span> <span class="pre">(R:209,</span> <span class="pre">G:229,</span> <span class="pre">B:240,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:253,</span> <span class="pre">G:219,</span> <span class="pre">B:199,</span> <span class="pre">A:255),</span> <span class="pre">(R:244,</span> <span class="pre">G:165,</span> <span class="pre">B:130,</span> <span class="pre">A:255),</span> <span class="pre">(R:214,</span> <span class="pre">G:96,</span> <span class="pre">B:77,</span> <span class="pre">A:255),</span> <span class="pre">(R:178,</span> <span class="pre">G:24,</span> <span class="pre">B:43,</span> <span class="pre">A:255),</span> <span class="pre">(R:103,</span> <span class="pre">G:0,</span> <span class="pre">B:31,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.shade_benefit_harm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.shade_harm">
+<code class="sig-name descname"><span class="pre">shade_harm</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:253,</span> <span class="pre">G:219,</span> <span class="pre">B:199,</span> <span class="pre">A:255),</span> <span class="pre">(R:244,</span> <span class="pre">G:165,</span> <span class="pre">B:130,</span> <span class="pre">A:255),</span> <span class="pre">(R:214,</span> <span class="pre">G:96,</span> <span class="pre">B:77,</span> <span class="pre">A:255),</span> <span class="pre">(R:178,</span> <span class="pre">G:24,</span> <span class="pre">B:43,</span> <span class="pre">A:255),</span> <span class="pre">(R:103,</span> <span class="pre">G:0,</span> <span class="pre">B:31,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.shade_harm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.shadow_study">
+<code class="sig-name descname"><span class="pre">shadow_study</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:55,</span> <span class="pre">G:55,</span> <span class="pre">B:55,</span> <span class="pre">A:255),</span> <span class="pre">(R:235,</span> <span class="pre">G:235,</span> <span class="pre">B:235,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.shadow_study" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.therm">
+<code class="sig-name descname"><span class="pre">therm</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:137,</span> <span class="pre">G:0,</span> <span class="pre">B:139,</span> <span class="pre">A:255),</span> <span class="pre">(R:218,</span> <span class="pre">G:0,</span> <span class="pre">B:218,</span> <span class="pre">A:255),</span> <span class="pre">(R:196,</span> <span class="pre">G:0,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:92,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:198,</span> <span class="pre">B:252,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:244,</span> <span class="pre">B:215,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:220,</span> <span class="pre">B:101,</span> <span class="pre">A:255),</span> <span class="pre">(R:7,</span> <span class="pre">G:193,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:115,</span> <span class="pre">G:220,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:249,</span> <span class="pre">G:251,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:254,</span> <span class="pre">G:178,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:253,</span> <span class="pre">G:77,</span> <span class="pre">B:0,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:15,</span> <span class="pre">B:15,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:135,</span> <span class="pre">B:135,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.therm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.thermal_comfort">
+<code class="sig-name descname"><span class="pre">thermal_comfort</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:0,</span> <span class="pre">G:136,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:200,</span> <span class="pre">G:225,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:255,</span> <span class="pre">B:255,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:230,</span> <span class="pre">B:230,</span> <span class="pre">A:255),</span> <span class="pre">(R:255,</span> <span class="pre">G:0,</span> <span class="pre">B:0,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.thermal_comfort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Colors.view_study">
+<code class="sig-name descname"><span class="pre">view_study</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((R:255,</span> <span class="pre">G:20,</span> <span class="pre">B:147,</span> <span class="pre">A:255),</span> <span class="pre">(R:240,</span> <span class="pre">G:47,</span> <span class="pre">B:145,</span> <span class="pre">A:255),</span> <span class="pre">(R:203,</span> <span class="pre">G:117,</span> <span class="pre">B:139,</span> <span class="pre">A:255),</span> <span class="pre">(R:160,</span> <span class="pre">G:196,</span> <span class="pre">B:133,</span> <span class="pre">A:255),</span> <span class="pre">(R:132,</span> <span class="pre">G:248,</span> <span class="pre">B:129,</span> <span class="pre">A:255),</span> <span class="pre">(R:124,</span> <span class="pre">G:253,</span> <span class="pre">B:132,</span> <span class="pre">A:255),</span> <span class="pre">(R:96,</span> <span class="pre">G:239,</span> <span class="pre">B:160,</span> <span class="pre">A:255),</span> <span class="pre">(R:53,</span> <span class="pre">G:217,</span> <span class="pre">B:203,</span> <span class="pre">A:255),</span> <span class="pre">(R:15,</span> <span class="pre">G:198,</span> <span class="pre">B:240,</span> <span class="pre">A:255),</span> <span class="pre">(R:0,</span> <span class="pre">G:191,</span> <span class="pre">B:255,</span> <span class="pre">A:255))</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Colors.view_study" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="honeybee_vtk.legend_parameter.Font">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">honeybee_vtk.legend_parameter.</span></code><code class="sig-name descname"><span class="pre">Font</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bold</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#Font"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.Font" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Fonts for the legend.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>color</strong> – A tuple of three integer values for R, G, and B. Defaults (0, 0, 0).</p></li>
+<li><p><strong>size</strong> – An integer representing the size of fonts in points. Defaults to 30.</p></li>
+<li><p><strong>bold</strong> – A boolean to specify whether the fonts should be made bold.
+Defaults to False.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.Font.to_vtk">
+<code class="sig-name descname"><span class="pre">to_vtk</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">vtkmodules.vtkRenderingCore.vtkTextProperty</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#Font.to_vtk"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.Font.to_vtk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a vtk TextProperty object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.Font.bold">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">bold</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.Font.bold" title="Permalink to this definition">¶</a></dt>
+<dd><p>To make font bold nor not.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.Font.color">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">color</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.Font.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Color of fonts in RGB decimal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.Font.size">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">size</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.Font.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Size of fonts.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="honeybee_vtk.legend_parameter.LabelFormat">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">honeybee_vtk.legend_parameter.</span></code><code class="sig-name descname"><span class="pre">LabelFormat</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#LabelFormat"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.LabelFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>Setting the type of the Label on a Legend.</p>
+<p>Types refers to two point decimal numbers, three point decimal numbers, and integers.</p>
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.LabelFormat.decimal_three">
+<code class="sig-name descname"><span class="pre">decimal_three</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'%-#6.3f'</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.LabelFormat.decimal_three" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.LabelFormat.decimal_two">
+<code class="sig-name descname"><span class="pre">decimal_two</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'%#6.2f'</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.LabelFormat.decimal_two" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.LabelFormat.default">
+<code class="sig-name descname"><span class="pre">default</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'%-#6.3g'</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.LabelFormat.default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.LabelFormat.integer">
+<code class="sig-name descname"><span class="pre">integer</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'%4.3g'</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.LabelFormat.integer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">honeybee_vtk.legend_parameter.</span></code><code class="sig-name descname"><span class="pre">LegendParameter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">name:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'Legend'</span></em>, <em class="sig-param"><span class="pre">colors:</span> <span class="pre">honeybee_vtk.legend_parameter.Colors</span> <span class="pre">=</span> <span class="pre">&lt;Colors.ecotect:</span> <span class="pre">((R:0</span></em>, <em class="sig-param"><span class="pre">G:0</span></em>, <em class="sig-param"><span class="pre">B:255</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:53</span></em>, <em class="sig-param"><span class="pre">G:0</span></em>, <em class="sig-param"><span class="pre">B:202</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:107</span></em>, <em class="sig-param"><span class="pre">G:0</span></em>, <em class="sig-param"><span class="pre">B:148</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:160</span></em>, <em class="sig-param"><span class="pre">G:0</span></em>, <em class="sig-param"><span class="pre">B:95</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:214</span></em>, <em class="sig-param"><span class="pre">G:0</span></em>, <em class="sig-param"><span class="pre">B:41</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:255</span></em>, <em class="sig-param"><span class="pre">G:12</span></em>, <em class="sig-param"><span class="pre">B:0</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:255</span></em>, <em class="sig-param"><span class="pre">G:66</span></em>, <em class="sig-param"><span class="pre">B:0</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:255</span></em>, <em class="sig-param"><span class="pre">G:119</span></em>, <em class="sig-param"><span class="pre">B:0</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:255</span></em>, <em class="sig-param"><span class="pre">G:173</span></em>, <em class="sig-param"><span class="pre">B:0</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:255</span></em>, <em class="sig-param"><span class="pre">G:226</span></em>, <em class="sig-param"><span class="pre">B:0</span></em>, <em class="sig-param"><span class="pre">A:255)</span></em>, <em class="sig-param"><span class="pre">(R:255</span></em>, <em class="sig-param"><span class="pre">G:255</span></em>, <em class="sig-param"><span class="pre">B:0</span></em>, <em class="sig-param"><span class="pre">A:255))&gt;</span></em>, <em class="sig-param"><span class="pre">range:</span> <span class="pre">Tuple[int</span></em>, <em class="sig-param"><span class="pre">int]</span> <span class="pre">=</span> <span class="pre">(0</span></em>, <em class="sig-param"><span class="pre">100)</span></em>, <em class="sig-param"><span class="pre">show_legend:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></em>, <em class="sig-param"><span class="pre">orientation:</span> <span class="pre">honeybee_vtk.legend_parameter.Orientation</span> <span class="pre">=</span> <span class="pre">&lt;Orientation.horizontal:</span> <span class="pre">'horizontal'&gt;</span></em>, <em class="sig-param"><span class="pre">position:</span> <span class="pre">Tuple[float</span></em>, <em class="sig-param"><span class="pre">float]</span> <span class="pre">=</span> <span class="pre">(0.5</span></em>, <em class="sig-param"><span class="pre">0.1)</span></em>, <em class="sig-param"><span class="pre">width:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.45</span></em>, <em class="sig-param"><span class="pre">height:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.05</span></em>, <em class="sig-param"><span class="pre">number_of_colors:</span> <span class="pre">Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></em>, <em class="sig-param"><span class="pre">number_of_labels:</span> <span class="pre">Optional[int]</span> <span class="pre">=</span> <span class="pre">None</span></em>, <em class="sig-param"><span class="pre">label_format:</span> <span class="pre">honeybee_vtk.legend_parameter.LabelFormat</span> <span class="pre">=</span> <span class="pre">&lt;LabelFormat.integer:</span> <span class="pre">'%4.3g'&gt;</span></em>, <em class="sig-param"><span class="pre">label_position:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0</span></em>, <em class="sig-param"><span class="pre">label_font:</span> <span class="pre">honeybee_vtk.legend_parameter.Font</span> <span class="pre">=</span> <span class="pre">Font</span> <span class="pre">color:</span> <span class="pre">(0.0</span></em>, <em class="sig-param"><span class="pre">0.0</span></em>, <em class="sig-param"><span class="pre">0.0)</span> <span class="pre">|</span> <span class="pre">Font</span> <span class="pre">size:</span> <span class="pre">30</span> <span class="pre">|</span> <span class="pre">Bold:</span> <span class="pre">False</span></em>, <em class="sig-param"><span class="pre">title_font:</span> <span class="pre">honeybee_vtk.legend_parameter.Font</span> <span class="pre">=</span> <span class="pre">Font</span> <span class="pre">color:</span> <span class="pre">(0.0</span></em>, <em class="sig-param"><span class="pre">0.0</span></em>, <em class="sig-param"><span class="pre">0.0)</span> <span class="pre">|</span> <span class="pre">Font</span> <span class="pre">size:</span> <span class="pre">50</span> <span class="pre">|</span> <span class="pre">Bold:</span> <span class="pre">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#LegendParameter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Legend parameters for the vtk legend (scalarbar) object.</p>
+<p>A vtk legend has a number of colors, labels, and a title. Here, labels mean the
+numbers you see on a legend such as 0, 1, 2, 3, 4, 5 on a legend with max value of 5.</p>
+<blockquote>
+<div><dl>
+<dt>Args:</dt><dd><dl class="simple">
+<dt>name: A text string representing the name of the legend object and the</dt><dd><p>title of the legend. Default to “Legend”.</p>
+</dd>
+</dl>
+<p>colors: A Colors object. Defaults to Ecotect colorset.
+range: A tuple of integers representing the minimum and maximum values of a</p>
+<blockquote>
+<div><p>legend. Defaults to (0, 100).</p>
+</div></blockquote>
+<dl class="simple">
+<dt>show_legend: A boolean to set the visibility of a legend in Scene.</dt><dd><p>Defaults to False.</p>
+</dd>
+<dt>orientation: An Orientation object that sets the orientation of the legend in</dt><dd><p>the scene. Defaults to horizontal orientation.</p>
+</dd>
+<dt>position: A tuple of two decimal values. The values represent the percentage</dt><dd><p>of viewport width and the percentage of viewport height. These
+percentages in decimal numbers will define the location of the start
+point of the legend. For example, a value of (0.0, 0.5) will place the
+start point of the legend at the left most side of the viewport and at
+the 50% height of the viewport. Default to (0.5, 0.1).</p>
+</dd>
+<dt>width: A decimal number representing the percentage of viewport width that</dt><dd><p>will be used to define the width of the legend. A value of 0.45 will
+make the width of legend equal to the 45% width of the viewport.
+Defaults to 0.45.</p>
+</dd>
+<dt>height: A decimal number representing the percentage of viewport height that</dt><dd><p>will be used to define the height of the legend. A value of 0.05 will
+make the height of legend equal to the 5% height of the viewport.
+Defaults to 0.05.</p>
+</dd>
+<dt>number_of_colors: An integer representing the number of colors in a legend.</dt><dd><p>Defaults to None.</p>
+</dd>
+<dt>number_of_labels: An integer representing the number of text labels on a</dt><dd><p>legend. Default to None.</p>
+</dd>
+</dl>
+<p>label_format: A LabelFormat object. Defaults to integer format.
+label_position: 0 or 1. The value of 0 would mean that the labels and the</p>
+<blockquote>
+<div><p>title would not precede the legend. The value of 1 would mean that the
+labels and the title would precede the legend. Defaults to 0.</p>
+</div></blockquote>
+<p>label_font: A Font object. Defaults to size 30 black fonts.
+title_font: A font object. Defaults to size 50 black bold fonts.</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.get_lookuptable">
+<code class="sig-name descname"><span class="pre">get_lookuptable</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">vtkmodules.vtkCommonCore.vtkLookupTable</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#LegendParameter.get_lookuptable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.get_lookuptable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a vtk lookuptable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.get_scalarbar">
+<code class="sig-name descname"><span class="pre">get_scalarbar</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">vtkmodules.vtkRenderingAnnotation.vtkScalarBarActor</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#LegendParameter.get_scalarbar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.get_scalarbar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a vtk scalar bar (legend).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.colors">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">colors</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Colors to be used in the legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.height">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">height</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>height of the legend as a percentage of viewport height.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.label_font">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">label_font</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.label_font" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font for the legend labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.label_format">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">label_format</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.label_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>The format of legend labels.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.label_position">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">label_position</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.label_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position of labels and the legend title on a legend.</p>
+<p>The value of 0 would mean that the labels and the title would not preced the
+legend. The value of 1 would mean that the labels and the title would precede
+the legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.name">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the legend parameter object and the title of the legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.number_of_colors">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">number_of_colors</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.number_of_colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of colors in the legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.number_of_labels">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">number_of_labels</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.number_of_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of text labels in the legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.orientation">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">orientation</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orientation of a legend in the scene.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.position">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">position</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.range">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">range</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.range" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple with min and max values in the legend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.show_legend">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">show_legend</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.show_legend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visibility of legend in the scene.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.title_font">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">title_font</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.title_font" title="Permalink to this definition">¶</a></dt>
+<dd><p>Font for the legend title.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="honeybee_vtk.legend_parameter.LegendParameter.width">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">width</span></code><a class="headerlink" href="#honeybee_vtk.legend_parameter.LegendParameter.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Width of the legend as a percentage of viewport width.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="honeybee_vtk.legend_parameter.Orientation">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">honeybee_vtk.legend_parameter.</span></code><code class="sig-name descname"><span class="pre">Orientation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/honeybee_vtk/legend_parameter.html#Orientation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#honeybee_vtk.legend_parameter.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>Orientation of a legend.</p>
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Orientation.horizontal">
+<code class="sig-name descname"><span class="pre">horizontal</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'horizontal'</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Orientation.horizontal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="honeybee_vtk.legend_parameter.Orientation.vertical">
+<code class="sig-name descname"><span class="pre">vertical</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'vertical'</span></em><a class="headerlink" href="#honeybee_vtk.legend_parameter.Orientation.vertical" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

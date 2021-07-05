@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>honeybee_vtk.config &#8212; honeybee vtk  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          honeybee vtk</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../honeybee_vtk.html">honeybee_vtk package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../honeybee_vtk.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.cli.html">honeybee_vtk.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../honeybee_vtk.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../honeybee_vtk.cli.export.html">honeybee_vtk.cli.export module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../honeybee_vtk.cli.translate.html">honeybee_vtk.cli.translate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../honeybee_vtk.cli.html#module-honeybee_vtk.cli">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.vtkjs.html">honeybee_vtk.vtkjs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../honeybee_vtk.vtkjs.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../honeybee_vtk.vtkjs.helper.html">honeybee_vtk.vtkjs.helper module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../honeybee_vtk.vtkjs.schema.html">honeybee_vtk.vtkjs.schema module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../honeybee_vtk.vtkjs.html#module-honeybee_vtk.vtkjs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../honeybee_vtk.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.actor.html">honeybee_vtk.actor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.assistant.html">honeybee_vtk.assistant module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.camera.html">honeybee_vtk.camera module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.config.html">honeybee_vtk.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.legend_parameter.html">honeybee_vtk.legend_parameter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.model.html">honeybee_vtk.model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.scene.html">honeybee_vtk.scene module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.to_vtk.html">honeybee_vtk.to_vtk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../honeybee_vtk.types.html">honeybee_vtk.types module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../honeybee_vtk.html#module-honeybee_vtk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../honeybee_vtk.html">honeybee_vtk package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../honeybee_vtk.html">honeybee_vtk package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for honeybee_vtk.config</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Data json schema and validation.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">validator</span><span class="p">,</span> <span class="n">Field</span>
+
+<span class="kn">from</span> <span class="nn">.types</span> <span class="kn">import</span> <span class="n">model_dataset_names</span>
+<span class="kn">from</span> <span class="nn">.legend_parameter</span> <span class="kn">import</span> <span class="n">Colors</span><span class="p">,</span> <span class="n">Font</span><span class="p">,</span> <span class="n">LabelFormat</span><span class="p">,</span> <span class="n">Orientation</span>
+<span class="kn">from</span> <span class="nn">.model</span> <span class="kn">import</span> <span class="n">Model</span>
+<span class="kn">from</span> <span class="nn">._helper</span> <span class="kn">import</span> <span class="n">get_line_count</span><span class="p">,</span> <span class="n">get_min_max</span>
+<span class="kn">from</span> <span class="nn">.vtkjs.schema</span> <span class="kn">import</span> <span class="n">DisplayMode</span>
+<span class="kn">from</span> <span class="nn">.scene</span> <span class="kn">import</span> <span class="n">Scene</span>
+
+
+<div class="viewcode-block" id="FontConfig"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.FontConfig">[docs]</a><span class="k">class</span> <span class="nc">FontConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Config for the fonts to be used in a legend.&quot;&quot;&quot;</span>
+
+    <span class="n">color</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;An array of three integer values representing R, G, and B values&#39;</span>
+        <span class="s1">&#39; for the color of fonts.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mi">30</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Size of fonts in points.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">bold</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">False</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Bool value to indicate whether to make the fonts bold or not.&#39;</span>
+    <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="LegendConfig"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.LegendConfig">[docs]</a><span class="k">class</span> <span class="nc">LegendConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Config for the legend to be created from a dataset.&quot;&quot;&quot;</span>
+
+    <span class="n">colors</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="s1">&#39;ecotect&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Color scheme for the legend.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="nb">range</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A list of minimum and maximum values for the legend.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">show_legend</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">False</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A bool value to indicate whether to show legend in the exported&#39;</span>
+        <span class="s1">&#39; images or not.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">orientation</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choose between horizontal and vertical orientation.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">position</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">],</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A tuple of two decimal values. The values represent the percentage&#39;</span>
+        <span class="s1">&#39; of viewport width and the percentage of viewport height.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">width</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mf">0.45</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39; A decimal number representing the percentage of viewport width&#39;</span>
+        <span class="s1">&#39; that will be used to define the width of the legend.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">height</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mf">0.05</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A decimal number representing the percentage of viewport height&#39;</span>
+        <span class="s1">&#39;that will be used to define the height of the legend.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">number_of_colors</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">None</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;An integer representing the number of colors in a legend.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">number_of_labels</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">None</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;An integer representing the number of text labels on a legend.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">label_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="s1">&#39;integer&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Format of legend labels.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">label_position</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="mi">0</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;0 or 1 to decide whether the legend title and the legend labels&#39;</span>
+        <span class="s1">&#39; will precede the legend or not.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">label_fonts</span><span class="p">:</span> <span class="n">FontConfig</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">FontConfig</span><span class="p">(),</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Font parameters for the fonts to be used for the labels on the&#39;</span>
+        <span class="s1">&#39; legend.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">title_fonts</span><span class="p">:</span> <span class="n">FontConfig</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">FontConfig</span><span class="p">(</span><span class="n">bold</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Font parameters for the fonts to be used in the title of the&#39;</span>
+        <span class="s1">&#39; legend.&#39;</span>
+    <span class="p">)</span>
+
+<div class="viewcode-block" id="LegendConfig.validate_colors"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.LegendConfig.validate_colors">[docs]</a>    <span class="nd">@validator</span><span class="p">(</span><span class="s1">&#39;colors&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">validate_colors</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="nb">dir</span><span class="p">(</span><span class="n">Colors</span><span class="p">)[</span><span class="mi">4</span><span class="p">:]</span>
+        <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s1">&#39;Colors must be a string from </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span><span class="si">}</span><span class="s1">. Instead got&#39;</span>
+                <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s1">.&#39;</span>
+            <span class="p">)</span></div>
+
+<div class="viewcode-block" id="LegendConfig.validate_orientation"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.LegendConfig.validate_orientation">[docs]</a>    <span class="nd">@validator</span><span class="p">(</span><span class="s1">&#39;orientation&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">validate_orientation</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">orientations</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="s1">&#39;vertical&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">orientations</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s1">&#39;Orientation must be from </span><span class="si">{</span><span class="n">orientations</span><span class="si">}</span><span class="s1">. Instead got </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s1">.&#39;</span>
+            <span class="p">)</span></div>
+
+<div class="viewcode-block" id="LegendConfig.validate_label_format"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.LegendConfig.validate_label_format">[docs]</a>    <span class="nd">@validator</span><span class="p">(</span><span class="s1">&#39;label_format&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">validate_label_format</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">label_formats</span> <span class="o">=</span> <span class="nb">dir</span><span class="p">(</span><span class="n">LabelFormat</span><span class="p">)[</span><span class="mi">4</span><span class="p">:]</span>
+        <span class="k">if</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">label_formats</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s1">&#39;Label format must be from </span><span class="si">{</span><span class="n">label_formats</span><span class="si">}</span><span class="s1">. Instead got </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s1">.&#39;</span>
+            <span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="DataConfig"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.DataConfig">[docs]</a><span class="k">class</span> <span class="nc">DataConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Config for each dataset you&#39;d like to load on a honeybee-vtk model.&quot;&quot;&quot;</span>
+
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Name to be given to data. Example, &quot;Daylight-Factor&quot;.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">object_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The name of the model object on which you would like to map this&#39;</span>
+        <span class="s1">&#39; data.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">file_paths</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;List of paths to the file or files that you are trying to use as&#39;</span>
+        <span class="s1">&#39; data.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">color_by</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="kc">False</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Bool value to indicate if this data should be used to color the&#39;</span>
+        <span class="s1">&#39; object type in the model.&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">legend_parameters</span><span class="p">:</span> <span class="n">LegendConfig</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">LegendConfig</span><span class="p">(),</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Legend parameters to create legend out of the this dataset.&#39;</span>
+    <span class="p">)</span>
+
+<div class="viewcode-block" id="DataConfig.validate_object"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.DataConfig.validate_object">[docs]</a>    <span class="nd">@validator</span><span class="p">(</span><span class="s1">&#39;object_type&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">validate_object</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">model_dataset_names</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s1">&#39;Object name should be from these </span><span class="si">{</span><span class="n">model_dataset_names</span><span class="si">}</span><span class="s1">.&#39;</span>
+                <span class="sa">f</span><span class="s1">&#39; Instead got </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s1">.&#39;</span>
+            <span class="p">)</span></div>
+
+<div class="viewcode-block" id="DataConfig.validate_paths"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.DataConfig.validate_paths">[docs]</a>    <span class="nd">@validator</span><span class="p">(</span><span class="s1">&#39;file_paths&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">validate_paths</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="nb">all</span><span class="p">([</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">is_file</span><span class="p">()</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]):</span>
+            <span class="k">return</span> <span class="n">v</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">paths</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="n">path</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">v</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">is_file</span><span class="p">()])</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s1">&#39;Following file paths are not valid </span><span class="si">{</span><span class="n">paths</span><span class="si">}</span><span class="s1">.&#39;</span>
+            <span class="p">)</span></div></div>
+
+
+<span class="k">def</span> <span class="nf">_validate_data</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">DataConfig</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Cross check data with model.</span>
+
+<span class="sd">    For grids, it will be checked if the number of data files and the names of the</span>
+<span class="sd">    data files match with the grid identifiers. For other than grid objects, it will</span>
+<span class="sd">    be checked that only one data file is provided and the length of the data file</span>
+<span class="sd">    matches the length of Polydata in the model. This is a helper method to the</span>
+<span class="sd">    public load_config method.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data: A DataConfig object.</span>
+<span class="sd">        model: A honeybee-vtk model.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A boolean value.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># if file_paths is empty</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s1">&#39;For object with name </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> There are not file paths&#39;</span>
+            <span class="s1">&#39; provided to load data from.&#39;</span>
+        <span class="p">)</span>
+
+    <span class="c1"># if object name is &quot;grid&quot; check that the name of files match the grid names</span>
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">object_type</span> <span class="o">==</span> <span class="n">model_dataset_names</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+
+        <span class="c1"># make sure grids are loaded on the model if grid data is to be mounted</span>
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">sensor_grids</span><span class="o">.</span><span class="n">data</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Sensor grids are not loaded on&#39;</span>\
+            <span class="s1">&#39; this model. Reload them using grid options.&#39;</span>
+
+        <span class="n">grid_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">grid</span><span class="o">.</span><span class="n">identifier</span> <span class="k">for</span> <span class="n">grid</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">sensor_grids</span><span class="o">.</span><span class="n">data</span><span class="p">]</span>
+        <span class="n">file_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">stem</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">]</span>
+        <span class="n">names_in_grids</span> <span class="o">=</span> <span class="nb">all</span><span class="p">([</span><span class="n">name</span> <span class="ow">in</span> <span class="n">grid_names</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">file_names</span><span class="p">])</span>
+
+        <span class="c1"># the number of data files must not exceed the number of grids</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_names</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">grid_names</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s1">&#39;There are only </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">grid_names</span><span class="p">)</span><span class="si">}</span><span class="s1"> grids in the model and the&#39;</span>
+                <span class="sa">f</span><span class="s1">&#39; identifiers of those grids are </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">grid_names</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span>
+            <span class="p">)</span>
+
+        <span class="c1"># TODO: remove this check in the next iteration</span>
+        <span class="c1"># make sure there&#39;s one file for each grid in the model</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">names_in_grids</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;Make sure the file names match the grid identifiers. The&#39;</span>
+                <span class="sa">f</span><span class="s1">&#39; identifiers of the grids in the model are </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">grid_names</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span>
+            <span class="p">)</span>
+
+        <span class="c1"># make sure length of each file matches the number of sensors in grid</span>
+        <span class="n">file_lengths</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_line_count</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span> <span class="k">for</span> <span class="n">file_path</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">]</span>
+        <span class="n">num_sensors</span> <span class="o">=</span> <span class="p">[</span><span class="n">polydata</span><span class="o">.</span><span class="n">GetNumberOfCells</span><span class="p">()</span>
+                       <span class="k">for</span> <span class="n">polydata</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">sensor_grids</span><span class="o">.</span><span class="n">data</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">file_lengths</span> <span class="o">!=</span> <span class="n">num_sensors</span><span class="p">:</span>
+            <span class="n">path_matches</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span> <span class="n">file_lengths</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">num_sensors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span>
+                <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">))</span>
+            <span class="p">}</span>
+            <span class="n">paths_to_report</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">path</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">path_matches</span> <span class="k">if</span> <span class="n">path_matches</span><span class="p">[</span><span class="n">path</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">]</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;File lengths must match grid sizes. Lengths of&#39;</span>
+                <span class="sa">f</span><span class="s1">&#39; following files do not match grid size </span><span class="si">{</span><span class="nb">tuple</span><span class="p">(</span><span class="n">paths_to_report</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="c1"># if object_name is other than grid check that length of data matches the length</span>
+    <span class="c1"># of data in the model for that object.</span>
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">object_type</span> <span class="ow">in</span> <span class="n">model_dataset_names</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+
+        <span class="c1"># only one file is accepted</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;Only one file path needs to be provided in order to load data on&#39;</span>
+                <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">object_type</span><span class="si">}</span><span class="s1">. Multiple files are provided in the config&#39;</span>
+                <span class="s1">&#39; file.&#39;</span>
+            <span class="p">)</span>
+
+        <span class="c1"># match length of file with the number of faces in the model</span>
+        <span class="k">if</span> <span class="n">get_line_count</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">get_modeldataset_from_string</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">object_type</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;The length of data in the file does not match the number of&#39;</span>
+                <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">object_type</span><span class="si">}</span><span class="s1"> objects in the model.&#39;</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="s1">&#39; object_name must be from one of these&#39;</span>
+            <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">model_dataset_names</span><span class="si">}</span><span class="s1">. Instead got </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">object_type</span><span class="si">}</span><span class="s1">.&#39;</span>
+        <span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_load_data</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">DataConfig</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Load validate data on a honeybee-vtk model.</span>
+
+<span class="sd">    This is a helper method to the public load_config method.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data: A DataConfig object.</span>
+<span class="sd">        model: A honeybee-vtk model.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># if data is for a ModelDataSet grid</span>
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">object_type</span> <span class="o">==</span> <span class="n">model_dataset_names</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">file_path</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">:</span>
+            <span class="n">res_file</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+            <span class="n">grid_res</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">res_file</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()]</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grid_res</span><span class="p">)</span>
+
+    <span class="c1"># if data is for a ModelDataSet other than grid</span>
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">object_type</span> <span class="ow">in</span> <span class="n">model_dataset_names</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="n">res_file</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">file_paths</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">[[</span><span class="nb">float</span><span class="p">(</span><span class="n">v</span><span class="p">)]</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">res_file</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()]</span>
+
+    <span class="n">ds</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_modeldataset_from_string</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">object_type</span><span class="p">)</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">add_data_fields</span><span class="p">(</span>
+        <span class="n">result</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">data_range</span><span class="o">=</span><span class="n">get_min_max</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">color_by</span><span class="p">:</span>
+        <span class="n">ds</span><span class="o">.</span><span class="n">color_by</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">ds</span><span class="o">.</span><span class="n">display_mode</span> <span class="o">=</span> <span class="n">DisplayMode</span><span class="o">.</span><span class="n">SurfaceWithEdges</span>
+
+
+<span class="k">def</span> <span class="nf">_load_legend_parameters</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">DataConfig</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">scene</span><span class="p">:</span> <span class="n">Scene</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Load legend_parameters.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data: A Dataconfig object.</span>
+<span class="sd">        model: A honeybee-vtk model object.</span>
+<span class="sd">        scene: A honeyebee-vtk scene object.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">legend_parameters</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">color_by</span><span class="p">:</span>
+
+        <span class="n">legend_params</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">legend_parameters</span>
+        <span class="n">legend</span> <span class="o">=</span> <span class="n">scene</span><span class="o">.</span><span class="n">legend_parameter</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">colors</span><span class="p">:</span>
+            <span class="n">legend</span><span class="o">.</span><span class="n">colors</span> <span class="o">=</span> <span class="n">Colors</span><span class="p">[</span><span class="n">legend_params</span><span class="o">.</span><span class="n">colors</span><span class="p">]</span>
+
+        <span class="n">legend</span><span class="o">.</span><span class="n">range</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">range</span>
+        <span class="n">legend</span><span class="o">.</span><span class="n">show_legend</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">show_legend</span>
+
+        <span class="k">if</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">orientation</span><span class="p">:</span>
+            <span class="n">legend</span><span class="o">.</span><span class="n">orientation</span> <span class="o">=</span> <span class="n">Orientation</span><span class="p">[</span><span class="n">legend_params</span><span class="o">.</span><span class="n">orientation</span><span class="p">]</span>
+
+        <span class="n">legend</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">position</span>
+        <span class="n">legend</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">width</span>
+        <span class="n">legend</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">height</span>
+        <span class="n">legend</span><span class="o">.</span><span class="n">number_of_colors</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">number_of_colors</span>
+
+        <span class="n">legend</span><span class="o">.</span><span class="n">number_of_labels</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">number_of_labels</span>
+        <span class="k">if</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">label_format</span><span class="p">:</span>
+            <span class="n">legend</span><span class="o">.</span><span class="n">label_format</span> <span class="o">=</span> <span class="n">LabelFormat</span><span class="p">[</span><span class="n">legend_params</span><span class="o">.</span><span class="n">label_format</span><span class="p">]</span>
+
+        <span class="n">legend</span><span class="o">.</span><span class="n">label_position</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">label_position</span>
+
+        <span class="k">if</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">label_fonts</span><span class="p">:</span>
+            <span class="n">label_fonts</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">label_fonts</span>
+            <span class="n">legend</span><span class="o">.</span><span class="n">label_font</span> <span class="o">=</span> <span class="n">Font</span><span class="p">(</span>
+                <span class="n">label_fonts</span><span class="o">.</span><span class="n">color</span><span class="p">,</span> <span class="n">label_fonts</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">label_fonts</span><span class="o">.</span><span class="n">bold</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">title_fonts</span><span class="p">:</span>
+            <span class="n">title_fonts</span> <span class="o">=</span> <span class="n">legend_params</span><span class="o">.</span><span class="n">title_fonts</span>
+            <span class="n">legend</span><span class="o">.</span><span class="n">title_font</span> <span class="o">=</span> <span class="n">Font</span><span class="p">(</span>
+                <span class="n">title_fonts</span><span class="o">.</span><span class="n">color</span><span class="p">,</span> <span class="n">title_fonts</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">title_fonts</span><span class="o">.</span><span class="n">bold</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">data</span><span class="o">.</span><span class="n">legend_parameters</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">data</span><span class="o">.</span><span class="n">color_by</span><span class="p">:</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s1">&#39;Since </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">object_type</span><span class="si">}</span><span class="s1"> is not going to be colored by </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">,&#39;</span>
+            <span class="s1">&#39; legend parameters will be ignored.&#39;</span>
+        <span class="p">)</span>
+
+
+<div class="viewcode-block" id="load_config"><a class="viewcode-back" href="../../honeybee_vtk.config.html#honeybee_vtk.config.load_config">[docs]</a><span class="k">def</span> <span class="nf">load_config</span><span class="p">(</span><span class="n">json_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">scene</span><span class="p">:</span> <span class="n">Scene</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Mount data on model from config json.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        json_path: File path to the config json file.</span>
+<span class="sd">        model: A honeybee-vtk model object.</span>
+<span class="sd">        scene: A honeybee-vtk scene object.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Check if json is valid</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+            <span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fh</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">decoder</span><span class="o">.</span><span class="n">JSONDecodeError</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+            <span class="s1">&#39;Not a valid json file.&#39;</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">json_obj</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">DataConfig</span><span class="o">.</span><span class="n">parse_obj</span><span class="p">(</span><span class="n">json_obj</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">_validate_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+                <span class="n">_load_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
+                <span class="n">_load_legend_parameters</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">scene</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

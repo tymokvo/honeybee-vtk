@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honeybee VTK Command Line Interface &#8212; honeybee vtk  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          honeybee vtk</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="honeybee_vtk.html">honeybee_vtk package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.cli.html">honeybee_vtk.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.cli.export.html">honeybee_vtk.cli.export module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.cli.translate.html">honeybee_vtk.cli.translate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.cli.html#module-honeybee_vtk.cli">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.vtkjs.html">honeybee_vtk.vtkjs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.vtkjs.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.vtkjs.helper.html">honeybee_vtk.vtkjs.helper module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="honeybee_vtk.vtkjs.schema.html">honeybee_vtk.vtkjs.schema module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="honeybee_vtk.vtkjs.html#module-honeybee_vtk.vtkjs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.actor.html">honeybee_vtk.actor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.assistant.html">honeybee_vtk.assistant module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.camera.html">honeybee_vtk.camera module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.config.html">honeybee_vtk.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.legend_parameter.html">honeybee_vtk.legend_parameter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.model.html">honeybee_vtk.model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.scene.html">honeybee_vtk.scene module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.to_vtk.html">honeybee_vtk.to_vtk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="honeybee_vtk.types.html">honeybee_vtk.types module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="honeybee_vtk.html#module-honeybee_vtk">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="honeybee_vtk.html">honeybee_vtk package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/cli.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="honeybee_vtk.html">honeybee_vtk package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="honeybee-vtk-command-line-interface">
+<h1>Honeybee VTK Command Line Interface<a class="headerlink" href="#honeybee-vtk-command-line-interface" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="honeybee-vtk">
+<h2>honeybee_vtk<a class="headerlink" href="#honeybee-vtk" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-version">
+<span id="cmdoption-honeybee-vtk-version"></span><code class="sig-name descname"><span class="pre">--version</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the version and exit.</p>
+</dd></dl>
+
+<div class="section" id="honeybee-vtk-config">
+<h3>config<a class="headerlink" href="#honeybee-vtk-config" title="Permalink to this headline">¶</a></h3>
+<p>Get a JSON object with all configuration information</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk config <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-config-output-file">
+<span id="cmdoption-honeybee-vtk-config-output-file"></span><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-config-output-file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the JSON string of the config object. By default, it will be printed out to stdout</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><ul class="simple">
+<li></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-create">
+<h3>create<a class="headerlink" href="#honeybee-vtk-create" title="Permalink to this headline">¶</a></h3>
+<p>Commands for creating Honeybee models.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk create <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="honeybee-vtk-create-l-shaped-plan">
+<h4>l-shaped-plan<a class="headerlink" href="#honeybee-vtk-create-l-shaped-plan" title="Permalink to this headline">¶</a></h4>
+<p>Create a model with an L-shaped floor plan.</p>
+<p>Note that the resulting Rooms in the model won’t have any windows or solved
+adjacencies. The edit commands should be used for this purpose.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">width_1: Number for the width of the lower part of the L segment.</div>
+<div class="line">length_1: Number for the length of the lower part of the L segment, not</div>
+<div class="line-block">
+<div class="line">counting the overlap between the upper and lower segments.</div>
+</div>
+<div class="line">width_2: Number for the width of the upper (left) part of the L segment.</div>
+<div class="line">length_2: Number for the length of the upper (left) part of the L segment, not</div>
+<div class="line-block">
+<div class="line">counting the overlap between the upper and lower segments.</div>
+</div>
+<div class="line">floor_to_floor_height: Number for the height of each floor of the model</div>
+<div class="line-block">
+<div class="line">(in the Z direction).</div>
+</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk create l-shaped-plan <span class="o">[</span>OPTIONS<span class="o">]</span> WIDTH_1 LENGTH_1 WIDTH_2 LENGTH_2
+                                  FLOOR_TO_FLOOR_HEIGHT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-p">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-p"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-perimeter-offset"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-perimeter-offset"></span><code class="sig-name descname"><span class="pre">-p</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--perimeter-offset</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;perimeter_offset&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional positive number that will be used  to offset the perimeter to create core/perimeter Rooms. If this value is 0, no offset will occur and each floor will have one Room</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-s">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-s"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-story-count"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-story-count"></span><code class="sig-name descname"><span class="pre">-s</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--story-count</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;story_count&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>An integer for the number of stories to generate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>1</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-a">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-a"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-orientation-angle"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-orientation-angle"></span><code class="sig-name descname"><span class="pre">-a</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--orientation-angle</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;orientation_angle&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number between 0 and 360 for the counterclockwise orientation that the L faces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-outdoor-roof">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-outdoor-roof"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-ar"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-ar"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-adiabatic-roof"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-adiabatic-roof"></span><code class="sig-name descname"><span class="pre">--outdoor-roof</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-ar</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--adiabatic-roof</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-outdoor-roof" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the roof faces of the top floor should be outdoor or adiabatic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-ground-floor">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-ground-floor"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-af"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-af"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-adiabatic-floor"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-adiabatic-floor"></span><code class="sig-name descname"><span class="pre">--ground-floor</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-af</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--adiabatic-floor</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-ground-floor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the floor faces of the bottom floor should be ground or adiabatic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-u">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-u"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-units"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-units"></span><code class="sig-name descname"><span class="pre">-u</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--units</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;units&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-u" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text for the units system in which the model geometry exists. Must be (Meters, Millimeters, Feet, Inches, Centimeters).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>Meters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-t">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-t"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-tolerance"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-tolerance"></span><code class="sig-name descname"><span class="pre">-t</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--tolerance</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;tolerance&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum difference between x, y, and z values at which vertices are considered equivalent.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-f">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-f"></span><span id="cmdoption-honeybee_vtk-create-l-shaped-plan-output-file"></span><span id="cmdoption-honeybee-vtk-create-l-shaped-plan-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-arg-WIDTH_1">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-arg-width-1"></span><code class="sig-name descname"><span class="pre">WIDTH_1</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-arg-WIDTH_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-arg-LENGTH_1">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-arg-length-1"></span><code class="sig-name descname"><span class="pre">LENGTH_1</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-arg-LENGTH_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-arg-WIDTH_2">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-arg-width-2"></span><code class="sig-name descname"><span class="pre">WIDTH_2</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-arg-WIDTH_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-arg-LENGTH_2">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-arg-length-2"></span><code class="sig-name descname"><span class="pre">LENGTH_2</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-arg-LENGTH_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-l-shaped-plan-arg-FLOOR_TO_FLOOR_HEIGHT">
+<span id="cmdoption-honeybee-vtk-create-l-shaped-plan-arg-floor-to-floor-height"></span><code class="sig-name descname"><span class="pre">FLOOR_TO_FLOOR_HEIGHT</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-l-shaped-plan-arg-FLOOR_TO_FLOOR_HEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-create-rectangle-plan">
+<h4>rectangle-plan<a class="headerlink" href="#honeybee-vtk-create-rectangle-plan" title="Permalink to this headline">¶</a></h4>
+<p>Create a model with a rectangular floor plan.</p>
+<p>Note that the resulting Rooms in the model won’t have any windows or solved
+adjacencies. The edit commands should be used for this purpose.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">width: Number for the width of the plan (in the X direction).</div>
+<div class="line">length: Number for the length of the plan (in the Y direction).</div>
+<div class="line">floor_to_floor_height: Number for the height of each floor of the model</div>
+<div class="line-block">
+<div class="line">(in the Z direction).</div>
+</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk create rectangle-plan <span class="o">[</span>OPTIONS<span class="o">]</span> WIDTH LENGTH
+                                   FLOOR_TO_FLOOR_HEIGHT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-p">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-p"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-perimeter-offset"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-perimeter-offset"></span><code class="sig-name descname"><span class="pre">-p</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--perimeter-offset</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;perimeter_offset&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional positive number that will be used  to offset the perimeter to create core/perimeter Rooms. If this value is 0, no offset will occur and each floor will have one Room</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-s">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-s"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-story-count"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-story-count"></span><code class="sig-name descname"><span class="pre">-s</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--story-count</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;story_count&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>An integer for the number of stories to generate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>1</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-a">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-a"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-orientation-angle"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-orientation-angle"></span><code class="sig-name descname"><span class="pre">-a</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--orientation-angle</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;orientation_angle&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number between 0 and 360 for the counterclockwise orientation that the width of the box faces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-outdoor-roof">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-outdoor-roof"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-ar"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-ar"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-adiabatic-roof"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-adiabatic-roof"></span><code class="sig-name descname"><span class="pre">--outdoor-roof</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-ar</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--adiabatic-roof</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-outdoor-roof" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the roof faces of the top floor should be outdoor or adiabatic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-ground-floor">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-ground-floor"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-af"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-af"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-adiabatic-floor"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-adiabatic-floor"></span><code class="sig-name descname"><span class="pre">--ground-floor</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-af</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--adiabatic-floor</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-ground-floor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the floor faces of the bottom floor should be ground or adiabatic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-u">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-u"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-units"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-units"></span><code class="sig-name descname"><span class="pre">-u</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--units</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;units&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-u" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text for the units system in which the model geometry exists. Must be (Meters, Millimeters, Feet, Inches, Centimeters).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>Meters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-t">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-t"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-tolerance"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-tolerance"></span><code class="sig-name descname"><span class="pre">-t</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--tolerance</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;tolerance&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum difference between x, y, and z values at which vertices are considered equivalent.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-f">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-f"></span><span id="cmdoption-honeybee_vtk-create-rectangle-plan-output-file"></span><span id="cmdoption-honeybee-vtk-create-rectangle-plan-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-arg-WIDTH">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-arg-width"></span><code class="sig-name descname"><span class="pre">WIDTH</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-arg-WIDTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-arg-LENGTH">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-arg-length"></span><code class="sig-name descname"><span class="pre">LENGTH</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-arg-LENGTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-rectangle-plan-arg-FLOOR_TO_FLOOR_HEIGHT">
+<span id="cmdoption-honeybee-vtk-create-rectangle-plan-arg-floor-to-floor-height"></span><code class="sig-name descname"><span class="pre">FLOOR_TO_FLOOR_HEIGHT</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-rectangle-plan-arg-FLOOR_TO_FLOOR_HEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-create-shoe-box">
+<h4>shoe-box<a class="headerlink" href="#honeybee-vtk-create-shoe-box" title="Permalink to this headline">¶</a></h4>
+<p>Create a model with a single shoe box Room.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">width: Number for the width of the box (in the X direction).</div>
+<div class="line">depth: Number for the depth of the box (in the Y direction).</div>
+<div class="line">height: Number for the height of the box (in the Z direction).</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk create shoe-box <span class="o">[</span>OPTIONS<span class="o">]</span> WIDTH DEPTH HEIGHT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-a">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-a"></span><span id="cmdoption-honeybee_vtk-create-shoe-box-orientation-angle"></span><span id="cmdoption-honeybee-vtk-create-shoe-box-orientation-angle"></span><code class="sig-name descname"><span class="pre">-a</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--orientation-angle</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;orientation_angle&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number between 0 and 360 for the clockwise orientation of the box in degrees. (0=North, 90=East, 180=South, 270=West).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-wr">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-wr"></span><span id="cmdoption-honeybee_vtk-create-shoe-box-window-ratio"></span><span id="cmdoption-honeybee-vtk-create-shoe-box-window-ratio"></span><code class="sig-name descname"><span class="pre">-wr</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--window-ratio</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;window_ratio&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-wr" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number between 0 and 1 (but not equal to 1) for the ratio between aperture area and area of the face pointing towards the orientation-angle. Using 0 will generate no windows</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-adiabatic">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-adiabatic"></span><span id="cmdoption-honeybee_vtk-create-shoe-box-o"></span><span id="cmdoption-honeybee-vtk-create-shoe-box-o"></span><span id="cmdoption-honeybee_vtk-create-shoe-box-outdoors"></span><span id="cmdoption-honeybee-vtk-create-shoe-box-outdoors"></span><code class="sig-name descname"><span class="pre">--adiabatic</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-o</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--outdoors</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-adiabatic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the faces that are not in the direction of the orientation-angle are adiabatic or outdoors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-u">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-u"></span><span id="cmdoption-honeybee_vtk-create-shoe-box-units"></span><span id="cmdoption-honeybee-vtk-create-shoe-box-units"></span><code class="sig-name descname"><span class="pre">-u</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--units</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;units&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-u" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text for the units system in which the model geometry exists. Must be (Meters, Millimeters, Feet, Inches, Centimeters).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>Meters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-t">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-t"></span><span id="cmdoption-honeybee_vtk-create-shoe-box-tolerance"></span><span id="cmdoption-honeybee-vtk-create-shoe-box-tolerance"></span><code class="sig-name descname"><span class="pre">-t</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--tolerance</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;tolerance&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum difference between x, y, and z values at which vertices are considered equivalent.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-f">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-f"></span><span id="cmdoption-honeybee_vtk-create-shoe-box-output-file"></span><span id="cmdoption-honeybee-vtk-create-shoe-box-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-arg-WIDTH">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-arg-width"></span><code class="sig-name descname"><span class="pre">WIDTH</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-arg-WIDTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-arg-DEPTH">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-arg-depth"></span><code class="sig-name descname"><span class="pre">DEPTH</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-arg-DEPTH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-create-shoe-box-arg-HEIGHT">
+<span id="cmdoption-honeybee-vtk-create-shoe-box-arg-height"></span><code class="sig-name descname"><span class="pre">HEIGHT</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-create-shoe-box-arg-HEIGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="honeybee-vtk-edit">
+<h3>edit<a class="headerlink" href="#honeybee-vtk-edit" title="Permalink to this headline">¶</a></h3>
+<p>Commands for editing Honeybee models.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="honeybee-vtk-edit-convert-units">
+<h4>convert-units<a class="headerlink" href="#honeybee-vtk-edit-convert-units" title="Permalink to this headline">¶</a></h4>
+<p>Convert a Model to a given units system.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+<div class="line">units: Text for the units system to which the model will be converted.</div>
+<div class="line-block">
+<div class="line">Choose from (Meters, Millimeters, Feet, Inches, Centimeters).</div>
+</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit convert-units <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON UNITS
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-convert-units-scale">
+<span id="cmdoption-honeybee-vtk-edit-convert-units-scale"></span><span id="cmdoption-honeybee_vtk-edit-convert-units-ns"></span><span id="cmdoption-honeybee-vtk-edit-convert-units-ns"></span><span id="cmdoption-honeybee_vtk-edit-convert-units-do-not-scale"></span><span id="cmdoption-honeybee-vtk-edit-convert-units-do-not-scale"></span><code class="sig-name descname"><span class="pre">--scale</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-ns</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--do-not-scale</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-convert-units-scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the model should be scaled as it is converted to the new units system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-convert-units-f">
+<span id="cmdoption-honeybee-vtk-edit-convert-units-f"></span><span id="cmdoption-honeybee_vtk-edit-convert-units-output-file"></span><span id="cmdoption-honeybee-vtk-edit-convert-units-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-convert-units-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with solved adjacency. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-convert-units-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-convert-units-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-convert-units-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-convert-units-arg-UNITS">
+<span id="cmdoption-honeybee-vtk-edit-convert-units-arg-units"></span><code class="sig-name descname"><span class="pre">UNITS</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-convert-units-arg-UNITS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-edit-extruded-border">
+<h4>extruded-border<a class="headerlink" href="#honeybee-vtk-edit-extruded-border" title="Permalink to this headline">¶</a></h4>
+<p>Add extruded borders to all windows in walls.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit extruded-border <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-extruded-border-d">
+<span id="cmdoption-honeybee-vtk-edit-extruded-border-d"></span><span id="cmdoption-honeybee_vtk-edit-extruded-border-depth"></span><span id="cmdoption-honeybee-vtk-edit-extruded-border-depth"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--depth</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;depth&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-extruded-border-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the extrusion depth. This can include the units of the distance (eg. 3ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0.2m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-extruded-border-outdoor">
+<span id="cmdoption-honeybee-vtk-edit-extruded-border-outdoor"></span><span id="cmdoption-honeybee_vtk-edit-extruded-border-i"></span><span id="cmdoption-honeybee-vtk-edit-extruded-border-i"></span><span id="cmdoption-honeybee_vtk-edit-extruded-border-indoor"></span><span id="cmdoption-honeybee-vtk-edit-extruded-border-indoor"></span><code class="sig-name descname"><span class="pre">--outdoor</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-i</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--indoor</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-extruded-border-outdoor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the borders should be on the indoors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-extruded-border-f">
+<span id="cmdoption-honeybee-vtk-edit-extruded-border-f"></span><span id="cmdoption-honeybee_vtk-edit-extruded-border-output-file"></span><span id="cmdoption-honeybee-vtk-edit-extruded-border-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-extruded-border-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with borders. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-extruded-border-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-extruded-border-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-extruded-border-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-edit-louvers-by-count">
+<h4>louvers-by-count<a class="headerlink" href="#honeybee-vtk-edit-louvers-by-count" title="Permalink to this headline">¶</a></h4>
+<p>Add louvers to all outdoor walls or windows in walls.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+<div class="line">louver_count: A positive integer for the number of louvers to generate.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit louvers-by-count <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON LOUVER_COUNT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-d">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-d"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-depth"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-depth"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--depth</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;depth&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the depth of the louvers. This can include the units of the distance (eg. 1ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0.25m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-a">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-a"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-angle"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-angle"></span><code class="sig-name descname"><span class="pre">-a</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--angle</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;angle&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the for an angle to rotate the louvers in degrees. Positive numbers indicate a downward rotation while negative numbers indicate an upward rotation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-o">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-o"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-offset"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-offset"></span><code class="sig-name descname"><span class="pre">-o</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--offset</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;offset&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-o" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional number for the offset of the louvers from base Face or Aperture. This can include the units of the distance (eg. 1ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-horizontal">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-horizontal"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-v"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-v"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-vertical"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-vertical"></span><code class="sig-name descname"><span class="pre">--horizontal</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-v</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--vertical</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-horizontal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether louvers are horizontal or vertical.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-per-window">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-per-window"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-pw"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-pw"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-per-wall"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-per-wall"></span><code class="sig-name descname"><span class="pre">--per-window</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-pw</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--per-wall</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-per-window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the louvers should be generated per aperture or per wall.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-outdoor">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-outdoor"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-i"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-i"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-indoor"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-indoor"></span><code class="sig-name descname"><span class="pre">--outdoor</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-i</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--indoor</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-outdoor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the louvers should be on the indoors like a light shelf.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-no-flip">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-no-flip"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-fs"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-fs"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-flip-start"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-flip-start"></span><code class="sig-name descname"><span class="pre">--no-flip</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-fs</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--flip-start</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-no-flip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the the side that the louvers start from should be flipped. If not flipped, louvers will start from top or right. If flipped, they will start from the bottom or left.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-f">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-f"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-count-output-file"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-count-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with louvers. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-count-arg-LOUVER_COUNT">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-count-arg-louver-count"></span><code class="sig-name descname"><span class="pre">LOUVER_COUNT</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-count-arg-LOUVER_COUNT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-edit-louvers-by-spacing">
+<h4>louvers-by-spacing<a class="headerlink" href="#honeybee-vtk-edit-louvers-by-spacing" title="Permalink to this headline">¶</a></h4>
+<p>Add louvers to all outdoor walls or windows in walls.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit louvers-by-spacing <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-s">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-s"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-spacing"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-spacing"></span><code class="sig-name descname"><span class="pre">-s</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--spacing</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;spacing&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the distance between each louver. This can include the units of the distance (eg. 2ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0.5m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-d">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-d"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-depth"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-depth"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--depth</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;depth&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the depth of the louvers. This can include the units of the distance (eg. 1ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0.25m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-a">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-a"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-angle"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-angle"></span><code class="sig-name descname"><span class="pre">-a</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--angle</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;angle&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the for an angle to rotate the louvers in degrees. Positive numbers indicate a downward rotation while negative numbers indicate an upward rotation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-o">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-o"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-offset"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-offset"></span><code class="sig-name descname"><span class="pre">-o</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--offset</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;offset&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-o" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional number for the offset of the louvers from base Face or Aperture. This can include the units of the distance (eg. 1ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-horizontal">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-horizontal"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-v"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-v"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-vertical"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-vertical"></span><code class="sig-name descname"><span class="pre">--horizontal</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-v</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--vertical</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-horizontal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note wh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-m">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-m"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-max-count"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-max-count"></span><code class="sig-name descname"><span class="pre">-m</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--max-count</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;max_count&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-m" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional integer to set the maximum number of louvers that will be generated. If 0, louvers will cover the entire face.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-per-window">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-per-window"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-pw"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-pw"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-per-wall"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-per-wall"></span><code class="sig-name descname"><span class="pre">--per-window</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-pw</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--per-wall</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-per-window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the louvers should be generated per aperture or per wall.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-outdoor">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-outdoor"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-i"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-i"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-indoor"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-indoor"></span><code class="sig-name descname"><span class="pre">--outdoor</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-i</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--indoor</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-outdoor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the louvers should be on the indoors like a light shelf.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-no-flip">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-no-flip"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-fs"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-fs"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-flip-start"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-flip-start"></span><code class="sig-name descname"><span class="pre">--no-flip</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-fs</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--flip-start</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-no-flip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the the side that the louvers start from should be flipped. If not flipped, louvers will start from top or right. If flipped, they will start from the bottom or left.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-f">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-f"></span><span id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-output-file"></span><span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with louvers. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-louvers-by-spacing-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-louvers-by-spacing-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-louvers-by-spacing-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-edit-overhang">
+<h4>overhang<a class="headerlink" href="#honeybee-vtk-edit-overhang" title="Permalink to this headline">¶</a></h4>
+<p>Add overhangs to all outdoor walls or windows in walls.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit overhang <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-overhang-d">
+<span id="cmdoption-honeybee-vtk-edit-overhang-d"></span><span id="cmdoption-honeybee_vtk-edit-overhang-depth"></span><span id="cmdoption-honeybee-vtk-edit-overhang-depth"></span><code class="sig-name descname"><span class="pre">-d</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--depth</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;depth&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-overhang-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the overhang depth. This can include the units of the distance (eg. 3ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>1m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-overhang-a">
+<span id="cmdoption-honeybee-vtk-edit-overhang-a"></span><span id="cmdoption-honeybee_vtk-edit-overhang-angle"></span><span id="cmdoption-honeybee-vtk-edit-overhang-angle"></span><code class="sig-name descname"><span class="pre">-a</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--angle</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;angle&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-overhang-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the for an angle to rotate the overhang in degrees. Positive numbers indicate a downward rotation while negative numbers indicate an upward rotation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-overhang-vo">
+<span id="cmdoption-honeybee-vtk-edit-overhang-vo"></span><span id="cmdoption-honeybee_vtk-edit-overhang-vertical-offset"></span><span id="cmdoption-honeybee-vtk-edit-overhang-vertical-offset"></span><code class="sig-name descname"><span class="pre">-vo</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--vertical-offset</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;vertical_offset&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-overhang-vo" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional number for the vertical offset of the overhang from the top of the window or face. Positive numbers move up while negative mode down. This can include the units of the distance (eg. 3ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-overhang-per-window">
+<span id="cmdoption-honeybee-vtk-edit-overhang-per-window"></span><span id="cmdoption-honeybee_vtk-edit-overhang-pw"></span><span id="cmdoption-honeybee-vtk-edit-overhang-pw"></span><span id="cmdoption-honeybee_vtk-edit-overhang-per-wall"></span><span id="cmdoption-honeybee-vtk-edit-overhang-per-wall"></span><code class="sig-name descname"><span class="pre">--per-window</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-pw</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--per-wall</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-overhang-per-window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the overhangs should be generated per aperture or per wall.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-overhang-outdoor">
+<span id="cmdoption-honeybee-vtk-edit-overhang-outdoor"></span><span id="cmdoption-honeybee_vtk-edit-overhang-i"></span><span id="cmdoption-honeybee-vtk-edit-overhang-i"></span><span id="cmdoption-honeybee_vtk-edit-overhang-indoor"></span><span id="cmdoption-honeybee-vtk-edit-overhang-indoor"></span><code class="sig-name descname"><span class="pre">--outdoor</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-i</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--indoor</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-overhang-outdoor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the overhangs should be on the indoors like a light shelf.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-overhang-f">
+<span id="cmdoption-honeybee-vtk-edit-overhang-f"></span><span id="cmdoption-honeybee_vtk-edit-overhang-output-file"></span><span id="cmdoption-honeybee-vtk-edit-overhang-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-overhang-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with overhangs. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-overhang-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-overhang-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-overhang-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-edit-solve-adjacency">
+<h4>solve-adjacency<a class="headerlink" href="#honeybee-vtk-edit-solve-adjacency" title="Permalink to this headline">¶</a></h4>
+<p>Solve adjacency between Rooms of a Model JSON file.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit solve-adjacency <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-solve-adjacency-wall">
+<span id="cmdoption-honeybee-vtk-edit-solve-adjacency-wall"></span><span id="cmdoption-honeybee_vtk-edit-solve-adjacency-ab"></span><span id="cmdoption-honeybee-vtk-edit-solve-adjacency-ab"></span><span id="cmdoption-honeybee_vtk-edit-solve-adjacency-air-boundary"></span><span id="cmdoption-honeybee-vtk-edit-solve-adjacency-air-boundary"></span><code class="sig-name descname"><span class="pre">--wall</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-ab</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--air-boundary</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-solve-adjacency-wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the wall adjacencies should be of the air boundary face type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-solve-adjacency-surface">
+<span id="cmdoption-honeybee-vtk-edit-solve-adjacency-surface"></span><span id="cmdoption-honeybee_vtk-edit-solve-adjacency-a"></span><span id="cmdoption-honeybee-vtk-edit-solve-adjacency-a"></span><span id="cmdoption-honeybee_vtk-edit-solve-adjacency-adiabatic"></span><span id="cmdoption-honeybee-vtk-edit-solve-adjacency-adiabatic"></span><code class="sig-name descname"><span class="pre">--surface</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-a</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--adiabatic</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-solve-adjacency-surface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether the adjacencies should be surface or adiabatic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-solve-adjacency-no-overwrite">
+<span id="cmdoption-honeybee-vtk-edit-solve-adjacency-no-overwrite"></span><span id="cmdoption-honeybee_vtk-edit-solve-adjacency-ow"></span><span id="cmdoption-honeybee-vtk-edit-solve-adjacency-ow"></span><span id="cmdoption-honeybee_vtk-edit-solve-adjacency-overwrite"></span><span id="cmdoption-honeybee-vtk-edit-solve-adjacency-overwrite"></span><code class="sig-name descname"><span class="pre">--no-overwrite</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">-ow</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--overwrite</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-solve-adjacency-no-overwrite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to note whether existing Surface boundary conditions should be overwritten.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-solve-adjacency-f">
+<span id="cmdoption-honeybee-vtk-edit-solve-adjacency-f"></span><span id="cmdoption-honeybee_vtk-edit-solve-adjacency-output-file"></span><span id="cmdoption-honeybee-vtk-edit-solve-adjacency-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-solve-adjacency-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with solved adjacency. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-solve-adjacency-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-solve-adjacency-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-solve-adjacency-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-edit-windows-by-ratio">
+<h4>windows-by-ratio<a class="headerlink" href="#honeybee-vtk-edit-windows-by-ratio" title="Permalink to this headline">¶</a></h4>
+<p>Add apertures to all outdoor walls of a model given a ratio.</p>
+<p>Note that this method removes any existing apertures and doors from the Walls.
+This method attempts to generate as few apertures as necessary to meet the ratio.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+<div class="line">ratio: A number between 0 and 1 (but not perfectly equal to 1)</div>
+<div class="line-block">
+<div class="line">for the desired ratio between window area and wall area.</div>
+</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit windows-by-ratio <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON RATIO
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-f">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-f"></span><span id="cmdoption-honeybee_vtk-edit-windows-by-ratio-output-file"></span><span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with windows. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-arg-RATIO">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-arg-ratio"></span><code class="sig-name descname"><span class="pre">RATIO</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-arg-RATIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-edit-windows-by-ratio-rect">
+<h4>windows-by-ratio-rect<a class="headerlink" href="#honeybee-vtk-edit-windows-by-ratio-rect" title="Permalink to this headline">¶</a></h4>
+<p>Add apertures to all outdoor walls of a model given a ratio.</p>
+<p>Note that this method removes any existing apertures and doors from the Walls.
+Any rectangular portions of walls will have customized rectangular apertures
+using the various inputs.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Honeybee Model JSON file.</div>
+<div class="line">ratio: A number between 0 and 1 (but not perfectly equal to 1)</div>
+<div class="line-block">
+<div class="line">for the desired ratio between window area and wall area.</div>
+</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk edit windows-by-ratio-rect <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON RATIO
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-ah">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-ah"></span><span id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-aperture-height"></span><span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-aperture-height"></span><code class="sig-name descname"><span class="pre">-ah</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--aperture-height</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;aperture_height&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-ah" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the target height of the output apertures. This can include the units of the distance (eg. 3ft) or, if no units are provided the value will be interpreted in the honeybee model units. Note that, if the ratio is too large for the height, the ratio will take precedence and the actual aperture_height will be larger than this value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>2m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-sh">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-sh"></span><span id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-sill-height"></span><span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-sill-height"></span><code class="sig-name descname"><span class="pre">-sh</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--sill-height</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;sill_height&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-sh" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the target height above the bottom edge of the rectangle to start the apertures. Note that, if the ratio is too large for the height, the ratio will take precedence and the sill_height will be smaller than this value. This can include the units of the distance (eg. 3ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0.8m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-hs">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-hs"></span><span id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-horizontal-separation"></span><span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-horizontal-separation"></span><code class="sig-name descname"><span class="pre">-hs</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--horizontal-separation</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;horizontal_separation&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-hs" title="Permalink to this definition">¶</a></dt>
+<dd><p>A number for the target separation between individual aperture centerlines. If this number is larger than the parent rectangle base, only one aperture will be produced. This can include the units of the distance (eg. 3ft) or, if no units are provided, the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>3m</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-vs">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-vs"></span><span id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-vertical-separation"></span><span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-vertical-separation"></span><code class="sig-name descname"><span class="pre">-vs</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--vertical-separation</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;vertical_separation&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-vs" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional number to create a single vertical separation between top and bottom apertures. This can include the units of the distance (eg. 3ft) or, if no units are provided the value will be interpreted in the honeybee model units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-f">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-f"></span><span id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-output-file"></span><span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the Model JSON string with windows. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-arg-RATIO">
+<span id="cmdoption-honeybee-vtk-edit-windows-by-ratio-rect-arg-ratio"></span><code class="sig-name descname"><span class="pre">RATIO</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-edit-windows-by-ratio-rect-arg-RATIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="honeybee-vtk-set-config">
+<h3>set-config<a class="headerlink" href="#honeybee-vtk-set-config" title="Permalink to this headline">¶</a></h3>
+<p>Commands to set honeybee-core configurations.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk set-config <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="honeybee-vtk-set-config-default-simulation-folder">
+<h4>default-simulation-folder<a class="headerlink" href="#honeybee-vtk-set-config-default-simulation-folder" title="Permalink to this headline">¶</a></h4>
+<p>Set the default-simulation-folder configuration variable.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">folder_path: Path to a folder to be set as the default-simulation-folder.</div>
+<div class="line-block">
+<div class="line">If unspecified, the default-simulation-folder will be set back to</div>
+<div class="line">the default.</div>
+</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk set-config default-simulation-folder <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FOLDER_PATH<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-set-config-default-simulation-folder-arg-FOLDER_PATH">
+<span id="cmdoption-honeybee-vtk-set-config-default-simulation-folder-arg-folder-path"></span><code class="sig-name descname"><span class="pre">FOLDER_PATH</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-set-config-default-simulation-folder-arg-FOLDER_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="honeybee-vtk-validate">
+<h3>validate<a class="headerlink" href="#honeybee-vtk-validate" title="Permalink to this headline">¶</a></h3>
+<p>Commands for validating Honeybee JSON files.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk validate <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<div class="section" id="honeybee-vtk-validate-model">
+<h4>model<a class="headerlink" href="#honeybee-vtk-validate-model" title="Permalink to this headline">¶</a></h4>
+<p>Validate all properties of a Model JSON file against the Honeybee schema.</p>
+<p>This includes basic properties like adjacency checks and all geometry checks.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">model_json: Full path to a Model JSON file.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk validate model <span class="o">[</span>OPTIONS<span class="o">]</span> MODEL_JSON
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-validate-model-f">
+<span id="cmdoption-honeybee-vtk-validate-model-f"></span><span id="cmdoption-honeybee_vtk-validate-model-output-file"></span><span id="cmdoption-honeybee-vtk-validate-model-output-file"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--output-file</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;output_file&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-validate-model-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional file to output the full report of any errors detected. By default it will be printed out to stdout</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-validate-model-arg-MODEL_JSON">
+<span id="cmdoption-honeybee-vtk-validate-model-arg-model-json"></span><code class="sig-name descname"><span class="pre">MODEL_JSON</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-validate-model-arg-MODEL_JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="honeybee-vtk-viz">
+<h3>viz<a class="headerlink" href="#honeybee-vtk-viz" title="Permalink to this headline">¶</a></h3>
+<p>Check if honeybee is flying!</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk viz <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="honeybee-vtk-vtk">
+<h3>vtk<a class="headerlink" href="#honeybee-vtk-vtk" title="Permalink to this headline">¶</a></h3>
+<p>honeybee-vtk commands.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk vtk <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-version">
+<span id="cmdoption-honeybee-vtk-vtk-version"></span><code class="sig-name descname"><span class="pre">--version</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the version and exit.</p>
+</dd></dl>
+
+<div class="section" id="honeybee-vtk-vtk-export-images">
+<h4>export-images<a class="headerlink" href="#honeybee-vtk-vtk-export-images" title="Permalink to this headline">¶</a></h4>
+<p>Export images from radiance views in a HBJSON file.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">hbjson-file: Path to an HBJSON file.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk vtk export-images <span class="o">[</span>OPTIONS<span class="o">]</span> HBJSON_FILE
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-n">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-n"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-name"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-name"></span><code class="sig-name descname"><span class="pre">-n</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--name</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;name&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of image files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>Camera</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-f">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-f"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-folder"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-folder"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--folder</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;folder&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to target folder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-it">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-it"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-image-type"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-image-type"></span><code class="sig-name descname"><span class="pre">-it</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--image-type</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;image_type&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-it" title="Permalink to this definition">¶</a></dt>
+<dd><p>choose the type of image file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>jpg</p>
+</dd>
+<dt class="field-even">Options</dt>
+<dd class="field-even"><p>png | jpg | ps | tiff | bmp | pnm</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-iw">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-iw"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-image-width"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-image-width"></span><code class="sig-name descname"><span class="pre">-iw</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--image-width</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;image_width&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-iw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Width of images in pixels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>2500</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-ih">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-ih"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-image-height"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-image-height"></span><code class="sig-name descname"><span class="pre">-ih</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--image-height</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;image_height&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-ih" title="Permalink to this definition">¶</a></dt>
+<dd><p>Height of images in pixels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>2000</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-bc">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-bc"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-background-color"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-background-color"></span><code class="sig-name descname"><span class="pre">-bc</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--background-color</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;background_color&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-bc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set background color for images</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>255, 255, 255</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-dmm">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-dmm"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-display-mode-model"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-display-mode-model"></span><code class="sig-name descname"><span class="pre">-dmm</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--display-mode-model</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;display_mode_model&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-dmm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set display mode for the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>shaded</p>
+</dd>
+<dt class="field-even">Options</dt>
+<dd class="field-even"><p>shaded | surface | surfacewithedges | wireframe | points</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-go">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-go"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-grid-options"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-grid-options"></span><code class="sig-name descname"><span class="pre">-go</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--grid-options</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;grid_options&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-go" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export sensor grids as either points or meshes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>ignore</p>
+</dd>
+<dt class="field-even">Options</dt>
+<dd class="field-even"><p>ignore | points | meshes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-dmg">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-dmg"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-display-mode-grid"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-display-mode-grid"></span><code class="sig-name descname"><span class="pre">-dmg</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--display-mode-grid</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;display_mode_grid&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-dmg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set display mode for the Sensorgrids.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>shaded</p>
+</dd>
+<dt class="field-even">Options</dt>
+<dd class="field-even"><p>shaded | surface | surfacewithedges | wireframe | points</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-vf">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-vf"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-view"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-view"></span><code class="sig-name descname"><span class="pre">-vf</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--view</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;view&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-vf" title="Permalink to this definition">¶</a></dt>
+<dd><p>File Path to the Radiance view file. Multiple view files are accepted.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-cf">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-cf"></span><span id="cmdoption-honeybee_vtk-vtk-export-images-config"></span><span id="cmdoption-honeybee-vtk-vtk-export-images-config"></span><code class="sig-name descname"><span class="pre">-cf</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--config</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;config&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-cf" title="Permalink to this definition">¶</a></dt>
+<dd><p>File Path to the config json file which can be used to mount simulation data on HBJSON.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-export-images-arg-HBJSON_FILE">
+<span id="cmdoption-honeybee-vtk-vtk-export-images-arg-hbjson-file"></span><code class="sig-name descname"><span class="pre">HBJSON_FILE</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-export-images-arg-HBJSON_FILE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="honeybee-vtk-vtk-translate">
+<h4>translate<a class="headerlink" href="#honeybee-vtk-vtk-translate" title="Permalink to this headline">¶</a></h4>
+<p>Translate a HBJSON file to an HTML or a vtkjs file.</p>
+<div class="line-block">
+<div class="line">Args:</div>
+<div class="line-block">
+<div class="line">hbjson-file: Path to an HBJSON file.</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>honeybee_vtk vtk translate <span class="o">[</span>OPTIONS<span class="o">]</span> HBJSON_FILE
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-translate-n">
+<span id="cmdoption-honeybee-vtk-vtk-translate-n"></span><span id="cmdoption-honeybee_vtk-vtk-translate-name"></span><span id="cmdoption-honeybee-vtk-vtk-translate-name"></span><code class="sig-name descname"><span class="pre">-n</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--name</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;name&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-translate-n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the output file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-translate-f">
+<span id="cmdoption-honeybee-vtk-vtk-translate-f"></span><span id="cmdoption-honeybee_vtk-vtk-translate-folder"></span><span id="cmdoption-honeybee-vtk-vtk-translate-folder"></span><code class="sig-name descname"><span class="pre">-f</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--folder</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;folder&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-translate-f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to target folder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-translate-ft">
+<span id="cmdoption-honeybee-vtk-vtk-translate-ft"></span><span id="cmdoption-honeybee_vtk-vtk-translate-file-type"></span><span id="cmdoption-honeybee-vtk-vtk-translate-file-type"></span><code class="sig-name descname"><span class="pre">-ft</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--file-type</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;file_type&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-translate-ft" title="Permalink to this definition">¶</a></dt>
+<dd><p>Switch between html and vtkjs formats</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>html</p>
+</dd>
+<dt class="field-even">Options</dt>
+<dd class="field-even"><p>html | vtkjs</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-translate-dm">
+<span id="cmdoption-honeybee-vtk-vtk-translate-dm"></span><span id="cmdoption-honeybee_vtk-vtk-translate-display-mode"></span><span id="cmdoption-honeybee-vtk-vtk-translate-display-mode"></span><code class="sig-name descname"><span class="pre">-dm</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--display-mode</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;display_mode&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-translate-dm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set display mode for the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>shaded</p>
+</dd>
+<dt class="field-even">Options</dt>
+<dd class="field-even"><p>shaded | surface | surfacewithedges | wireframe | points</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-translate-go">
+<span id="cmdoption-honeybee-vtk-vtk-translate-go"></span><span id="cmdoption-honeybee_vtk-vtk-translate-grid-options"></span><span id="cmdoption-honeybee-vtk-vtk-translate-grid-options"></span><code class="sig-name descname"><span class="pre">-go</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--grid-options</span></code><code class="sig-prename descclassname"> <span class="pre">&lt;grid_options&gt;</span></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-translate-go" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export sensor grids as either points or meshes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>ignore</p>
+</dd>
+<dt class="field-even">Options</dt>
+<dd class="field-even"><p>ignore | points | meshes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-translate-sh">
+<span id="cmdoption-honeybee-vtk-vtk-translate-sh"></span><span id="cmdoption-honeybee_vtk-vtk-translate-show-html"></span><span id="cmdoption-honeybee-vtk-vtk-translate-show-html"></span><span id="cmdoption-honeybee_vtk-vtk-translate-show"></span><span id="cmdoption-honeybee-vtk-vtk-translate-show"></span><code class="sig-name descname"><span class="pre">-sh</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--show-html</span></code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname"><span class="pre">,</span> </code><code class="sig-name descname"><span class="pre">--show</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-translate-sh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the generated HTML file in a browser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt id="cmdoption-honeybee_vtk-vtk-translate-arg-HBJSON_FILE">
+<span id="cmdoption-honeybee-vtk-vtk-translate-arg-hbjson-file"></span><code class="sig-name descname"><span class="pre">HBJSON_FILE</span></code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-honeybee_vtk-vtk-translate-arg-HBJSON_FILE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
